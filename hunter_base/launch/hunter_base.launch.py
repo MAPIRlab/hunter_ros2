@@ -32,6 +32,7 @@ def generate_launch_description():
         executable='hunter_base_node',
         output='screen',
         emulate_tty=True,
+        prefix="xterm -hold -e",
         parameters=[{
                 'use_sim_time': launch.substitutions.LaunchConfiguration('use_sim_time'),
                 'port_name': launch.substitutions.LaunchConfiguration('port_name'),                
